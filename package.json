@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app",
-    "debug": "ndb node app"
+    "start": "nodemon server",
+    "debug": "ndb node server",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,10 @@
     "express": "^4.17.1",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
   }
 }
